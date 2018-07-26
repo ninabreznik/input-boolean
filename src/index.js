@@ -3,7 +3,7 @@ var csjs = require('csjs-inject')
 
 module.exports = displayBooleanInput
 
-function displayBooleanInput({name, classes: css}) {
+function displayBooleanInput({name, theme.classes: css, theme.colors: colors}) {
   var boolFalse = bel `<div class=${css.false} onclick=${e=>toggle(e)}>false</div>`
   var boolTrue = bel `<div class=${css.true} onclick=${e=>toggle(e)}>true</div>`
 
