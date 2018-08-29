@@ -18,13 +18,13 @@ function displayBooleanInput({theme: {classes: css, colors}, type}) {
     if (e.target.innerHTML === 'true') {
       boolFalse.style.color = colors.slateGrey
       boolFalse.style.backgroundColor = colors.dark
-      boolTrue.style.color = colors.white
+      boolTrue.style.color = colors.dark
       boolTrue.style.backgroundColor = colors.aquaMarine
 
     } else if (e.target.innerHTML === 'false') {
       boolTrue.style.color = colors.slateGrey
       boolTrue.style.backgroundColor = colors.dark
-      boolFalse.style.color = colors.white
+      boolFalse.style.color = colors.dark
       boolFalse.style.backgroundColor = colors.violetRed
     }
   }
