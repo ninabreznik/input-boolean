@@ -5,8 +5,8 @@ var validator = require('solidity-validator')
 module.exports = displayBooleanInput
 
 function displayBooleanInput({theme: {classes: css, colors}, type, cb}) {
-  var boolFalse = bel `<div class=${css.false} onclick=${e=>toggle(e, type)}>false</div>`
-  var boolTrue = bel `<div class=${css.true} onclick=${e=>toggle(e, type)}>true</div>`
+  var boolFalse = bel `<div class=${css.false} id=${type} value="false" onclick=${e=>toggle(e, type)}>false</div>`
+  var boolTrue = bel `<div class=${css.true} id=${type} value="true" onclick=${e=>toggle(e, type)}>true</div>`
 
   var input = bel`
     <div class=${css.booleanField}>
@@ -35,7 +35,6 @@ function displayBooleanInput({theme: {classes: css, colors}, type, cb}) {
 
   function validate (e, type) {
     var msg = validator.getMessage(type, e.target.innerHTML)
-    console.log(msg)
     if (msg) cb(msg)
     else cb(null)
   }
