@@ -1,11 +1,11 @@
 {
   "name": "input-boolean",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "description": "A boolean-input-type component built with bel and csjs-inject",
-  "main": "src/index.js",
+  "main": "src/input-boolean.js",
   "scripts": {
-    "start": "budo src/index.js:bundle.js --dir ./ --live --open",
-    "build": "browserify src/index.js > bundle.js"
+    "start": "budo demo/demo.js:bundle.js --dir . --title $npm_package_name --force-default-index --ssl --live --open",
+    "build": "browserify demo/demo.js -o bundle.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,6 @@
   "dependencies": {
     "bel": "^6.0.0",
     "csjs-inject": "^1.0.1",
-    "solidity-validator": "0.0.5"
+    "solidity-validator": "^0.1.1"
   }
 }
