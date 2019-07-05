@@ -1,6 +1,6 @@
 {
   "name": "input-boolean",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "A boolean-input-type component built with bel and csjs-inject",
   "main": "src/input-boolean.js",
   "scripts": {
